@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css"  rel="stylesheet" />
+    <title>Digital clock</title>
+  </head>
+  <body class="w-full h-screen bg-gradient-to-r from-[#2c3e50] to-[#3498db]">
+    <body>
+        <div id="clock" class="w-[550px] h-36 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex ">
+            <h2 id="hr" class="relative bg-white h-full w-36 flex items-center justify-center font-sans text-6xl text-black rounded-md tracking-[3px] shadow-xl">00</h2>
+            <span class="font-bold flex items-center justify-center text-6xl text-white px-4">:</span>
+            <h2 id="min" class="relative bg-white h-full w-36 flex items-center justify-center font-sans text-6xl text-black rounded-md tracking-[3px] shadow-xl">00</h2>
+            <span class="font-bold text-6xl flex items-center justify-center px-4 text-white">:</span>
+            <h2 id="sec" class="relative bg-white h-full w-36 flex items-center justify-center font-sans text-6xl text-black rounded-md tracking-[3px] shadow-xl">00</h2>
+            
+        </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
