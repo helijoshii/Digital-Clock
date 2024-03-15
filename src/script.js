@@ -7,12 +7,12 @@ function timer() {
   const time = date.toLocaleTimeString();
 
   console.log(time);
-  const timeHr = time.slice(0, 1);
+  const timeHr = time.slice(0, 2);
 
   console.log("timeHr", timeHr);
-  const timeMin = time.slice(2, 4);
+  const timeMin = time.slice(3, 5);
   console.log("timeMin", timeMin);
-  const timeSec = time.slice(5, 8);
+  const timeSec = time.slice(6, 8);
   console.log("timeSec", timeSec);
 
   hr.innerText = Number(timeHr) < 10 ? `0${timeHr}` : timeHr;
@@ -20,4 +20,4 @@ function timer() {
   sec.innerText = timeSec;
 }
 
-setInterval(timer, 1000); 
+setInterval(timer, 1000);
